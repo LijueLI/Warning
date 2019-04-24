@@ -43,14 +43,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:textAlignment="textEnd"
+                android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.15" />
+                android:layout_weight="0.15"
+                android:text="m"
+                android:textAlignment="center"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -63,7 +66,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="雨量1h(mm)"
+                android:text="雨量1h"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
@@ -73,14 +76,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:textAlignment="textEnd"
+                android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.15" />
+                android:layout_weight="0.15"
+                android:text="mm"
+                android:textAlignment="center"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +99,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="雨量24h(mm)"
+                android:text="雨量24h"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
@@ -103,14 +109,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:textAlignment="textEnd"
+                android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.15" />
+                android:layout_weight="0.15"
+                android:text="mm"
+                android:textAlignment="center"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -123,7 +132,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="溫度(C)"
+                android:text="溫度"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
@@ -133,14 +142,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:textAlignment="textEnd"
+                android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.15" />
+                android:layout_weight="0.15"
+                android:text="°C"
+                android:textAlignment="center"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -153,7 +165,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="電瓶電壓(V)"
+                android:text="電瓶電壓"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
@@ -163,14 +175,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:textAlignment="textEnd"
+                android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.15" />
+                android:layout_weight="0.15"
+                android:text="V"
+                android:textAlignment="center"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -208,4 +223,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <ImageView
+        android:id="@+id/safe"
+        android:layout_width="306dp"
+        android:layout_height="293dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_t"
+        app:layout_constraintVertical_bias="0.304"
+        app:srcCompat="@drawable/safe_burned" />
 </android.support.constraint.ConstraintLayout>
